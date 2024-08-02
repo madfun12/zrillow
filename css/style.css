@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 1px solid #e4e4e4;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar h2 a {
+    color: #007eff;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-bar ul li a {
+    color: #323232;
+    display: block;
+    padding: 20px 20px;
+}
+
+.nav-bar ul li a.link-button {
+    background-color: #007eff;
+    color: #ffffff;
+    display: block;
+    padding: 20px 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px 10px;
+}
+
+form h1 {
+    margin-bottom: 20px;
+    color: #007eff;
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-wrapper label {
+    margin-bottom: 5px;
+}
+
+.input-wrapper input {
+    padding: 10px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+}
+.input-wrapper select {
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+}
+
+form button {
+    background-color: #007eff;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form button.warning {
+    background-color: #bd0f0f;
+}
+
+input[type="file"] {
+    padding: 0;
+}
+
+input::file-selector-button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    text-align: left;
+    content: "test";
+}
+
+form textarea {
+    padding: 10px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    min-height: 100px;
+}
+
+.properties {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.properties .property {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.properties .property img {
+    min-height: 225px;
+}
+
+.properties .property .info {
+    padding: 20px;
+    color: #323232;
+}
+
+.property-wrapper {
+    margin: auto;
+    width: fit-content;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.property-wrapper img {
+    width: 60%;
+}
+
+.property-wrapper .info-section {
+    padding: 20px;
+}
+.property-wrapper .info-section .address {
+    font-size: 24px;
+}
+.property-wrapper .info-section .price {
+    font-size: 22px;
+}
+.property-wrapper .info-section .beds-bath {
+    font-size: 20px;
+}
+.property-wrapper .info-section .description {
+    margin: 20px auto;
+    color: #666666;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.font-darkgrey {
+    color: #323232 !important;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.gap-4 {
+    gap: 1em;
+}
+
+.property-wrapper {
+    margin: 20px;
+}
+
+.property-wrapper img {
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 950px) {
+    .properties {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 650px) {
+    .properties {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
